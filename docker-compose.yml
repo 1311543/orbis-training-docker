@@ -1,0 +1,7 @@
+version: "2"
+services:
+  nginx:
+    container_name: nginx_app_name
+    image: nginx
+    ports:
+      - "1080:80" 

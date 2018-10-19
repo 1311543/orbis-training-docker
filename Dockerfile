@@ -1,5 +1,5 @@
-FROM nginx:alpine
-RUN mkdir app
-COPY preguntas.md /app
+FROM node:10.10.0-slim
+EXPOSE 3030 35729
+
 
 

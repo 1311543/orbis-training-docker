@@ -9,3 +9,5 @@ docker push francisjosue/orbis-training-docker:0.1.0
 docke tag francisjosue/orbis-training-docker:0.1.0 francisjosue/orbis-training-docker:0.2.0
 # En el archivo README.md, agregar el comando que usaste en este paso.
 docker run --rm -p 1080:80 francisjosue/orbis-training-docker:1.2.0
+# Para correr un contendor con y levantar el servidor de npm
+docker run -it --rm -w /app -v $PWD:/app -p 3030:3030 francisjosue/orbis-training-docker:3.0.0 npm start
